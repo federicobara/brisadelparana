@@ -17,7 +17,7 @@ background-color: rgb(220, 235, 217);
 }
 
 img {
-    width: 25rem;
+    width: 15rem;
 }
 
     .ul{
@@ -25,6 +25,7 @@ img {
         padding: 1.25rem;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
+
         
     }
 
