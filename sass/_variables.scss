@@ -1,0 +1,51 @@
+$ancho :100%;
+$letra: 'Josefin Sans', sans-serif;
+$bg-color-green:green;
+$flex : flex;
+$center:center;
+$column:column;
+$primary-color: #fff;
+$text-align: center;
+$padding-inline-end: 1.25rem;
+$background-repeat: no-repeat;
+$background-size: cover;
+$medioancho: 6.250rem;
+$padding: 1.25rem;
+$font-weight:700;
+$align-items: flex-end;
+$verde:rgb(84, 104, 73);
+$padding12: 12.5rem;
+
+/* maps */
+$sizes:(
+    catorce: 14px,
+    16 : 16px,
+    20 :20px,
+    10 : 10px
+);
+
+$estilos: (
+  color: rgb(253, 253, 253),
+  centro: $center,
+  tFuente: 1.875rem,
+  botoom: 1.25rem,
+  1rem : 1rem,
+  font: $letra
+);
+
+$header: (
+background-repeat: no-repeat,
+background-size: cover,
+height: 100vh,
+width: 100%,
+position: relative
+);
+
+$header2: (
+background-repeat: no-repeat,
+background-size: cover,
+height: $ancho,
+width: $ancho,
+position: relative
+);
+

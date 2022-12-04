@@ -1,0 +1,129 @@
+/*   FOOTER ANIDADO */
+ 
+.footer {
+    font-family: $letra;
+    color: rgba(255, 255, 255, 0.993);
+    background-color: #080e07;
+    text-align: $center; }
+        :root{
+            --facebook: #101058f6;
+            --twitter: #0b0bc796;
+            --youtube: #a7212159; 
+            --whatsapp: #0df053;
+            } 
+
+      .redescontainer {
+        display: flex;
+        height: 100vh;
+        align-items: $center;
+        justify-content: $center; }
+/* (operaciones en li) */
+    .redes-container{
+    ul{
+        &hover a{
+            filter: blur(2px);}
+    li{
+                display: inline-block;
+                margin: 0 5px;
+                width: $medioancho/2; 
+                height: $medioancho/2;
+                /*
+                width: 3.125rem;
+                height: 3.125rem;
+                */
+                text-align: $center;
+                  .facebook{
+                    background: var(--facebook);
+                    }
+                  .twitter{
+                    background: var(--twitter);    
+                        } 
+                  .youtube{
+                    background: var(--youtube);   
+                }
+                .whatsapp{
+                    background: var(--whatsapp);
+                    position: fixed;
+                    width: 3.438rem;
+                    height: 3.438rem;
+                    line-height: 3.438rem;
+                    bottom: 1.875rem;
+                    right: 1.875rem;
+                    background: #0df053;
+                    color: $primary-color;
+                    border-radius: 3.125rem;
+                    text-align: $center;
+                    font-size: 1.875rem;
+                    box-shadow: 0rem 0.063rem 0.625rem rgba(0, 0 , 0, .3);
+                    z-index: 100;
+    a{               
+                    &:hover{
+                    transform: translateY(-3px) scale(1.05);
+                    box-shadow: 0 3px 5px 0px rgba(0, 0, 0,.2);
+                    filter: none;}
+                   
+                        }
+              }
+    }
+
+    }
+   }
+   .redes-container ul li a{
+    display: block;
+    padding: 0 10px;
+    background: #333;
+    color: $primary-color;
+    line-height: 3.125rem;
+    font-size: 1.125rem;
+    box-shadow: 0 0.188rem 0.313rem 0rem rgba(0, 0 , 0, .2);
+    transition: .2s;
+    }
+
+    .textofooter {
+    text-align: $center;
+    font-size: 1rem;
+    font-family: $letra;
+    color: #fff
+}
+
+@media screen and (max-width: 768px) {
+    .footer{
+        text-align: $center;
+        height: 100px;
+        width: auto;}
+    .redescontainer {
+            display: flex;
+            height: 20vh;
+            align-items: $center;
+            justify-content: $center;
+            }
+     .redes-container ul li{
+                display: inline-block;
+                margin: 0 5px;
+                width: 1rem;
+                height: 1rem;
+                text-align: $center;    
+                }
+    .redes-container ul li a{
+                    padding: 1 15px;
+                    line-height: 1.125rem;
+                    font-size: 0.5rem;
+                    text-align: $center;
+                    margin-left: 10px;
+                }
+    .whatsapp{
+                    position: fixed;
+                    width: 1.438rem;
+                    height: 1.438rem;
+                    line-height: 1.438rem;
+                    bottom: 1.875rem;
+                    right: 1.875rem;
+                    background: #0df053;
+                    color: $primary-color;
+                    border-radius: 3.125rem;
+                    text-align: $center;
+                    font-size: 1.875rem;
+                    box-shadow: 0rem 0.063rem 0.625rem rgba(0, 0 , 0, .3);
+                    z-index: 100;
+              }
+}

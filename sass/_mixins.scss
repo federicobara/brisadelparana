@@ -1,0 +1,16 @@
+@mixin flex-end-padding-font-font-weight($align-items){
+align-items: $align-items;
+padding: $padding;
+font-family: $letra;
+font-weight: $font-weight;
+}
+
+@mixin color-align-padding-font-font-weight($center){
+    color: rgb(29, 66, 22);
+    text-align: $center;
+    padding-inline-end: 1.25rem;
+    font-size: 3rem;
+    padding: 1.875rem;
+    font-family: $letra;
+    font-weight: 400;
+    }

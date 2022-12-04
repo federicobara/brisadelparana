@@ -1,0 +1,106 @@
+@import "fonts";
+@import "variables";
+@import "reset";
+@import "mixins";
+@import "header";
+@import "mainindex";
+@import "maingaleria";
+@import "mainservicios";
+@import "maincontacto";
+@import "footer";
+
+
+ .body{ 
+background-color: rgb(220, 235, 217);  
+}
+
+h1,h3{
+ color :rgba(65, 111, 57, 0.233);
+ font-family: $letra;
+ font-weight: 400;
+}
+
+/*  FORM CONTACTO Y FECHAS */ 
+.form{
+width: 28.125rem;
+margin:auto;
+background:rgba(0, 0, 0, 0.199);
+padding: 0.625rem 1.25rem;
+box-sizing: border-box;
+margin-top: 1.25rem;
+border-radius: 0.438rem;
+font-family: $letra;
+}
+
+/* IMPUT/TEXTAREA CONTACTO Y FECHAS */
+input, textarea {
+width: $ancho;
+margin-bottom: 1.25rem;
+padding: 0.438rem;
+box-sizing: border-box;
+font-size: 1.063rem;
+border: none;
+font-family: $letra;
+}
+
+/*  H1C DE CONTACTO/FECHAS/SERVICIOS/GALERIA */
+.h1c{
+color: rgb(253, 253, 253);    
+text-align: $center;
+font-size: 1.875rem;
+margin-bottom: 1.25rem;
+font-family: $letra;
+
+}
+
+textarea{
+min-height: 6.25rem;
+min-height: 12.5rem;
+max-width: $ancho;
+}
+
+#boton{
+    background-color:rgb(65, 111, 57);
+    color: $primary-color;
+    padding: 1.25rem;
+}
+
+   .textogaleria{
+    color: rgb(7, 31, 10);
+    text-align: $center;
+    padding-inline-end: 1.25rem;
+    font-size: 2rem;
+    font-family: $letra;
+    font-weight: 400;
+    margin-bottom: 6.25rem;
+    font-weight: 6.25rem;
+}
+
+
+  @media screen and (max-width: 768px) {
+    .form{
+        width: 20rem;
+        margin:auto;
+        background:rgba(0, 0, 0, 0.199);
+        padding: 0.625rem 1.25rem;
+        box-sizing: border-box;
+        margin-top: 1.25rem;
+        border-radius: 0.438rem;
+        font-family: $letra;
+        }
+        
+        input, textarea {
+        width: $ancho;
+        margin-bottom: 1.25rem;
+        padding: 0.438rem;
+        box-sizing: border-box;
+        font-size: 1.063rem;
+        border: none;
+        font-family: $letra;
+        }
+
+        iframe {
+            max-width: 100%;
+            height: auto;
+           }
+}

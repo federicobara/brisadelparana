@@ -1,0 +1,140 @@
+/*   BACKGROUND IMAGENES DE LAS 5 PAGINAS DEL HEADER. */
+.logo {
+    background-image:url(../assets/imagenes/logodorado.jpg);
+    background-repeat: map-get($header, background-repeat );
+    background-size: map-get($header , background-size );
+    height:map-get($header, height);
+    width: map-get($header, width);
+    position:map-get($header, position);
+}
+
+.header{
+    background-image: url(../assets/imagenes/logo5.jpg);
+    background-repeat: map-get($header, background-repeat );
+    background-size: map-get($header , background-size );
+    height:map-get($header, height);
+    width: map-get($header, width);
+    position:map-get($header, position);
+}
+
+.header1{
+    background-image: url(../assets/imagenes/logopescado.jpg);
+    background-repeat: map-get($header, background-repeat );
+    background-size: map-get($header , background-size );
+    height:map-get($header, height);
+    width: map-get($header, width);
+    position:map-get($header, position);
+}
+
+.header2 {
+    background-image: url(../assets/imagenes/logo3.jpg);
+    background-repeat: map-get($header, background-repeat );
+    background-size: map-get($header , background-size );
+    height:map-get($header2, height);
+    width: map-get($header, width);
+    position:map-get($header, position);
+    
+}
+
+.header3{
+    background-image: url(../assets/imagenes/logo4.jpg);
+    background-repeat: map-get($header, background-repeat );
+    background-size: map-get($header , background-size );
+    height:map-get($header, height);
+    width: map-get($header, width);
+    position:map-get($header, position);
+}
+
+.imagenlogo {
+    width: 15rem;
+}
+/*   HEADER ANIDADO */
+
+ .ul{
+    @include flex-end-padding-font-font-weight($align-items);
+    /*
+    align-items: flex-end;
+    padding: 1.25rem;
+    font-family: $letra;
+    font-weight: 700;
+  */
+.li{
+        color: aliceblue; 
+            }
+        }
+.tituloprincipal {
+            color:rgb(84, 104, 73);
+            text-align: $center;
+            padding-bottom: 0rem;
+            font-size: 3rem;
+            padding: 12.5rem;
+            font-family: $letra;
+            font-weight: 400;
+            }
+.textoprincipal{
+                color: rgba(255, 255, 255, 0.993);
+                font-family: $letra;
+                font-weight: 200;
+                font-size: 2rem;
+                padding: 10rem;
+                }
+
+
+@media screen and (max-width: 768px) {
+   
+                    .logo {
+                        background-image:url(../assets/imagenes/logodorado.jpg);
+                        background-repeat: $background-repeat;
+                        background-size: $background-size;
+                        height: initial;
+                        width: $ancho;
+                        position: relative;
+                    }
+                    .header{
+                        background-image: url(../assets/imagenes/logo5.jpg);
+                        background-repeat: $background-repeat;
+                        background-size: $background-size;
+                        height: initial;
+                        width: $ancho;
+                        position: relative;
+                         }
+                    .header1{
+                        background-image: url(../assets/imagenes/logopescado.jpg);
+                        background-repeat: $background-repeat;
+                        background-size: $background-size;
+                        height: initial;
+                        width: $ancho;
+                        position: relative;
+                        }
+                    .header2 {
+                        background-image: url(../assets/imagenes/logo3.jpg);
+                        background-repeat: $background-repeat;
+                        background-size: $background-size;
+                        height: initial;
+                        width: $ancho;
+                        position: relative;
+                        }
+                        
+                    .header3{
+                            background-image: url(../assets/imagenes/logo4.jpg);
+                            background-repeat: $background-repeat;
+                            background-size: $background-size;
+                            height: initial;
+                            width: $ancho;
+                            position: relative;
+                         }
+                         .tituloprincipal {
+                            text-align: $center;
+                            padding-bottom: 0rem;
+                            font-size: 20px;
+                            padding: 2px;
+                            font-family: $letra;
+                            font-weight: 10px;
+                        }
+                        .textoprincipal{
+                            font-family: $letra;
+                            font-weight: 13px;
+                            font-size: 13px;
+                            padding: 70px;
+                         }
+                    }                

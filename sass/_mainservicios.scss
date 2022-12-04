@@ -1,0 +1,22 @@
+.textoita2{
+    color: #080808;
+    text-align: $center;
+    padding-inline-end: 1.25rem;
+    font-size: 2rem;
+    font-family: $letra;
+    font-weight: 200;
+    margin-bottom: 6.25rem;
+    font-weight: 6.25rem; 
+    }
+
+@media screen and (max-width: 768px) {
+
+.textoita2{
+        text-align: $center;
+        padding-inline-end: 1.25rem;
+        font-size: 1rem;
+        font-weight: 200;
+        margin-bottom: 6.25rem;
+        font-weight: 6.25rem; 
+            }
+}
