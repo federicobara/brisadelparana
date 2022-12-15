@@ -3,7 +3,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  object-fit: cover; }
 
 /*   BACKGROUND IMAGENES DE LAS 5 PAGINAS DEL HEADER. */
 .logo {
@@ -65,11 +66,11 @@
     color: aliceblue; }
 
 .tituloprincipal {
-  color: #546849;
+  color: rgba(32, 56, 19, 0.829);
   text-align: center;
   padding-bottom: 0rem;
   font-size: 3rem;
-  padding: 12.5rem;
+  padding: 10rem;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
 
@@ -78,9 +79,12 @@
   font-family: "Josefin Sans", sans-serif;
   font-weight: 200;
   font-size: 2rem;
-  padding: 10rem; }
+  padding: 20rem;
+  text-align: center; }
 
 @media screen and (max-width: 768px) {
+  .imagenlogo {
+    width: 7rem; }
   .logo {
     background-image: url(../assets/imagenes/logodorado.jpg);
     background-repeat: no-repeat;
@@ -127,7 +131,16 @@
     font-family: "Josefin Sans", sans-serif;
     font-weight: 13px;
     font-size: 13px;
-    padding: 70px; } }
+    padding: 0.2rem; } }
+
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+  .textoprincipal {
+    color: rgba(255, 255, 255, 0.993);
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+    padding: 0.7rem;
+    text-align: center; } }
 
 .textosecundario {
   color: #416f39;
@@ -256,12 +269,15 @@
   font-family: "Josefin Sans", sans-serif;
   color: rgba(255, 255, 255, 0.993);
   background-color: #080e07;
+  position: absolute;
+  width: 100%;
+  clear: both;
   text-align: center; }
 
 :root {
-  --facebook: #101058f6;
-  --twitter: #0b0bc796;
-  --youtube: #a7212159;
+  --facebook: #0417d7;
+  --twitter: #0417d7;
+  --youtube: #861111b4;
   --whatsapp: #0df053; }
 
 .redescontainer {
@@ -330,7 +346,7 @@
   .footer {
     text-align: center;
     height: 100px;
-    width: auto; }
+    width: 100%; }
   .redescontainer {
     display: flex;
     height: 20vh;
@@ -440,4 +456,8 @@ textarea {
     font-family: "Josefin Sans", sans-serif; }
   iframe {
     max-width: 100%;
-    height: auto; } }
+    height: auto; }
+  .textogaleria {
+    font-size: 1.5rem;
+    font-weight: 1.5rem;
+    margin-bottom: 6.25rem; } }

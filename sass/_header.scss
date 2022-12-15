@@ -62,26 +62,33 @@
         color: aliceblue; 
             }
         }
+
 .tituloprincipal {
-            color:rgb(84, 104, 73);
+            color:rgba(32, 56, 19, 0.829);
             text-align: $center;
             padding-bottom: 0rem;
             font-size: 3rem;
-            padding: 12.5rem;
+            padding: 10rem;
             font-family: $letra;
             font-weight: 400;
+           
             }
+
 .textoprincipal{
                 color: rgba(255, 255, 255, 0.993);
                 font-family: $letra;
                 font-weight: 200;
                 font-size: 2rem;
-                padding: 10rem;
+                padding: 20rem;
+                text-align: center;
                 }
 
 
 @media screen and (max-width: 768px) {
-   
+
+                  .imagenlogo {
+                     width: 7rem; }
+
                     .logo {
                         background-image:url(../assets/imagenes/logodorado.jpg);
                         background-repeat: $background-repeat;
@@ -135,6 +142,17 @@
                             font-family: $letra;
                             font-weight: 13px;
                             font-size: 13px;
-                            padding: 70px;
+                            padding: 0.2rem;
                          }
-                    }                
+                    }               
+
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1600px){
+.textoprincipal{
+    color: rgba(255, 255, 255, 0.993);
+    font-family: $letra;
+    font-weight: 200;
+    font-size: 2rem;
+    padding: 0.7rem;
+    text-align: center;
+    }
+}
